@@ -1,0 +1,453 @@
+/* SMURF */
+body {
+    height:100%;
+}
+
+body#micro {
+     	background: url(../images/striped-bg-tile.png) top left repeat;
+}
+/*  Views  */
+#views-loading {
+    color: #666;
+}
+/********************** Top pane of Edit View Now moved to the*************************/
+#top-pane {
+    width:100%;
+    height:23px;
+    position:fixed;
+    top:0px !important;
+    left:0px !important;
+    z-index:1001;
+    background: url('../images/gradient_more_items_bottom.png') repeat-x top center;
+    padding:0;
+}
+/* Configure blockinstance */
+.blockinstance {
+    padding: 0px 0px 20px 0px;
+
+}
+.blockinstance.configure {
+      border: 0px solid #eee;
+      background: #fff;
+    margin-top:30px;
+ }
+.blockinstance-header {
+    width:auto;
+    margin:3px 0;
+    padding:5px 10px;
+    background-color: #f4f4f4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ffffff)); /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, #f4f4f4, #ffffff); /* Chrome 10+, Saf5.1+ */
+      background-image:    -moz-linear-gradient(top, #f4f4f4, #ffffff); /* FF3.6 */
+      background-image:     -ms-linear-gradient(top, #f4f4f4, #ffffff); /* IE10 */
+      background-image:      -o-linear-gradient(top, #f4f4f4, #ffffff); /* Opera 11.10+ */
+      background-image:         linear-gradient(top, #f4f4f4, #ffffff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f4f4f4', EndColorStr='#ffffff'); /* IE6–IE9 */
+}
+.blockinstance-header h4, .blockinstance-header h4 a {
+    color:#000;
+    border:0;
+}
+.blockinstance-header h4 {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #d2d2d2;
+}
+/* The tabs that allow you to select a blocktype category */
+#category-list {
+    min-width: 800px;
+    position:relative;
+    top:0px;
+    margin: 0;
+    left:60px;
+    z-index:1000;
+}
+
+#category-list ul {
+    background-color: #333;
+    background-image: -webkit-gradient(linear, left left, left right, from(#333333), to(#000000)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #333333, #000000); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(left, #333333, #000000); /* FF3.6 */
+    background-image:     -ms-linear-gradient(left, #333333, #000000); /* IE10 */
+    background-image:      -o-linear-gradient(left, #333333, #000000); /* Opera 11.10+ */
+    background-image:         linear-gradient(left, #333333, #000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#333333', EndColorStr='#000000'); /* IE6–IE9 */
+    height: 25px;
+    padding-left: 10px;
+}
+#category-list li {
+    line-height: 20px;
+    margin: 0 !important;
+    float: left;
+    color: #fff;
+    transform: vertical;
+}
+#category-list li a,
+#category-list li a:link,
+#category-list li a:visited,
+#category-list li a:active {
+    background: transparent;
+       color: #fff;
+    padding: 5px 12px 6px 10px;
+    height: 20px;
+}
+#category-list li a:hover {
+    background: transparent;
+    color: #888;
+}
+#category-list li.current a,
+#category-list li.current a:link,
+#category-list li.current a:visited,
+#category-list li.current a:active {
+    
+    padding: 5px 12px 6px 10px;
+    height: 20px;
+    background:transparent linear-gradient(45deg, white);
+    color:#fff;
+}
+
+
+
+/******************* Between Panes **************************************/
+#layout-link {
+    background: url(../images/icon-change.gif) no-repeat left center;
+    padding-left: 1.5em;
+    padding-top: 1px;
+    font-weight: bold;
+}
+#layout-link.disabled {
+    color: #aaa;
+    cursor: default;
+}
+#layout-link.disabled:hover {
+    text-decoration: none;
+}
+#middle-pane {
+    background: none;
+}
+
+/********************** Bottom pane of Edit View *************************/
+#page #bottom-pane {
+    padding: 0 10px 10px 10px;
+    background: none;
+} 
+/* Disabling this because the string is irrelevant now */
+#blocksinstruction {
+    visibility:hidden;
+    position:relative;
+    right:0px;
+    top:0px;
+    
+}
+/* The panel that contains the blocktype icons */
+/*********************** Blocktype List ***********************/
+#blocktype-list {
+    min-height:100% !important;
+    display:inline;
+    background-color: #000;
+    background-image: -webkit-gradient(linear, left left, left right, from(#000000), to(#333333)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(left, #000000, #333333); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(left, #000000, #333333); /* FF3.6 */
+    background-image:     -ms-linear-gradient(left, #000000, #333333); /* IE10 */
+    background-image:      -o-linear-gradient(left, #000000, #333333); /* Opera 11.10+ */
+    background-image:         linear-gradient(left, #000000, #333333);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#333333'); /* IE6–IE9 */
+    z-index:1000;
+        border:0;
+    padding:15px 0px;
+    margin:0;
+    position:fixed;
+    left:0px;
+    top:0px;
+    min-width:60px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+
+}
+.blocktype-radio {
+    float:left;
+}
+
+#noblocks {
+    color: #666;
+}
+
+.blocktype {
+    padding: 1px;
+    margin:1px;
+}
+.blocktype img {
+    height: 37px;
+    width:44px;
+    z-index:12000;
+    margin: 4px 0px 1px 0px;
+}
+
+
+#blocktype-list li {
+    background: url('../images/round_shine_54x54.png') no-repeat center;    
+    float: none;
+    height: 44px;
+    line-height:1.4em;
+    margin: 0;
+    min-height:0px !important;
+    text-align:center;
+    white-space:normal;
+    width:60px;
+    visibility:visible;
+    list-style:none;
+
+}
+#blocktype-list li:hover {
+    background: url('../images/round_selected_66x66.png') no-repeat center;    
+    float: none;
+    height: 44px;
+    line-height:1.4em;
+    margin: 0;
+    min-height:0px !important;
+    text-align:center;
+    white-space:normal;
+    width:60px;
+    visibility:visible;
+    list-style:none;
+}
+/* To make the block title and description appear in a div to the right of the blocktype img */ 
+.moreinfo {
+    float:left;
+    left:60px;
+    top:inherit;
+    position:fixed;
+    visibility:hidden;
+    width:200px;
+    background: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    z-index:9999;
+}
+.moreinfo h4 {
+    color: #fff;
+    font-weight:bold;
+    font-size:15px;
+    padding-top:5px;
+}
+li#desc:hover div.moreinfo {
+    float:left;
+    left:60px;
+    position:fixed;
+    visibility:visible;
+    width:200px;
+    background: #000;
+    color: #fff;
+    border: solid 1px #fff;
+    z-index:9999;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+/* This stops the blocktype title & description from showing when the category list is clicked */
+
+#blocktype-list li div.blocktype div {
+    width:200px;
+    white-space: normal;
+    visibility:hidden;
+    position:absolute;
+    left:60px;
+    z-index:10004;
+    top:inherit;
+}
+
+
+#blocktype-list .blocktype h4 {
+    width:200px;
+    visibility:hidden;
+    position:fixed;
+    left:60px;
+    padding: 5px 15px;
+}
+
+/* These are the styles and effects for the blocktype title and description */
+
+a.imglink {
+    width:44px;
+    height:44px;
+    z-index:1003;
+}
+
+a.imglink div {
+    position: absolute;
+    display: none !important;
+    left: 60px;
+    margin: 0em;
+    padding: 1em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+a.imglink:hover div {
+    display:block;
+    height:50px;
+    width:100%;
+    border: solid 1px #999;
+    background: #000;
+    z-index: 1002;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#block-placeholder {
+    border: 2px dashed #bfbfbf;
+    margin-bottom: 2px;
+}
+
+
+/* Wall */
+.wallpost {
+    background-color: #F8FBFD;
+}
+
+/* tabs for the artefact chooser */
+ul.artefactchooser-tabs {
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 12px !important;
+    background: url(../images/tabs-bg.gif) repeat-x left top;
+    height: 25px;
+    padding-left: 10px !important;
+}
+ul.artefactchooser-tabs li {
+    line-height: 25px;
+    margin: 0 !important;
+    float: left;
+    color: #1E6297 !important;
+}
+ul.artefactchooser-tabs li a,
+ul.artefactchooser-tabs li a:link,
+ul.artefactchooser-tabs li a:visited,
+ul.artefactchooser-tabs li a:active {
+    background: transparent url(../images/tabs-divider.gif) no-repeat right top;
+    color: #474220 !important;
+    padding: 5px 12px 6px 10px;
+    height: 25px;
+}
+ul.artefactchooser-tabs li a:hover {
+    color: #7E7327 !important;
+}
+ul.artefactchooser-tabs li.current a,
+ul.artefactchooser-tabs li.current a:link,
+ul.artefactchooser-tabs li.current a:visited
+ul.artefactchooser-tabs li.current a:active {
+    background: transparent url(../images/tabs-over-bg.gif) no-repeat right top;
+    color: #1E6297 !important;
+    padding: 5px 12px 6px 10px;
+    height: 25px;
+}
+ul.artefactchooser-tabs li.current a:hover {
+}
+ul.artefactchooser-subtabs {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+ul.artefactchooser-subtabs li {
+  padding: 0;
+  margin: 0 3px 0 0 !important;
+  border-right: 0;
+}
+ul.artefactchooser-subtabs li a,
+ul.artefactchooser-subtabs li a:link,
+ul.artefactchooser-subtabs li a:visited,
+ul.artefactchooser-subtabs li a:active {
+  text-decoration: none;
+  padding: .25em .5em;
+  background: #F3F7EC;
+}
+ul.artefactchooser-subtabs li a:hover {
+    text-decoration: none;
+}
+ul.artefactchooser-subtabs li.current a,
+ul.artefactchooser-subtabs li.current a:link,
+ul.artefactchooser-subtabs li.current a:visited,
+ul.artefactchooser-subtabs li.current a:active {
+  color: #333;
+  font-weight: bold;
+}
+ul.artefactchooser-subtabs li.current a:hover {
+    text-decoration: none;
+}
+
+#artefactchooser-body {
+}
+
+
+/* table */
+.maharatable thead th {
+    color: #186194;
+}
+
+
+.plan_incomplete td {
+    background: #e9f0f5;
+}
+
+/* View Page footer menu */
+
+/* views */
+.feedback {
+    background: url(../images/feedback.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+.objection {
+    background: url(../images/objectionable.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+.print {
+    background: url(../images/icon-print.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+.watchlist {
+    background: url(../images/watchlist.gif) no-repeat left top;
+    padding-left: 20px !important;
+}
+
+/* Collection navigation */
+.collection-title {
+    color: #fff;
+}
+ul.colnav li a {
+    background: #fff;
+    color: #333 !important;
+    border: 1px solid #d2d2d2;
+    border-bottom:0;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+}
+ul.colnav li a:hover {
+    background: #333;
+    color: #fff !important;
+    text-decoration:none;
+    border: 1px solid #d2d2d2;
+    border-bottom:0;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+}
+li.selected span {
+    background: #333;
+    color: #fff !important;
+    text-decoration:none;
+    border: 1px solid #d2d2d2;
+    border-bottom:0;
+    border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -ms-border-radius: 3px 3px 0px 0px;
+    font-weight:bold;
+}
+.blockinstance-content .groupviewsection h5 {
+    color: #333;
+}
