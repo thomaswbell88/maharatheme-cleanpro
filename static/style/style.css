@@ -60,7 +60,8 @@ h6 {
 	color:#fff;
 }
 .main-column, .main-column-narrow {
-	width: 80%;
+	width: 70%;
+	min-width:650px;
 }
 .main-column {
 	background: #fff !important;
@@ -471,9 +472,10 @@ ul.in-page-tabs li a.current-tab:active {
 #left-column,
 #right-column {
     padding: 0;
+    margin-right:0;
 }
-.right-column {
-	float:left;
+#right-column {
+	float:right;
 }
 div.sideblock {
     background: url(../images/sidebar-bg.gif) repeat-x top;
