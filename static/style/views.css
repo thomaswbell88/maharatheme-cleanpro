@@ -159,6 +159,7 @@ body#micro {
     left:0px;
     top:0px;
     min-width:60px;
+    max-width:60px;
     overflow-y:hidden;
     overflow-x:hidden;
 
@@ -185,10 +186,11 @@ body#micro {
 
 #blocktype-list li {
     background: url('../images/round_shine_54x54.png') no-repeat center;    
-    float: none;
+    float: left;
     height: 44px;
     line-height:1.4em;
     margin: 0;
+    display:block;
     min-height:0px !important;
     text-align:center;
     white-space:normal;
@@ -199,7 +201,7 @@ body#micro {
 }
 #blocktype-list li:hover {
     background: url('../images/round_selected_66x66.png') no-repeat center;    
-    float: none;
+    float: left;
     height: 44px;
     line-height:1.4em;
     margin: 0;
