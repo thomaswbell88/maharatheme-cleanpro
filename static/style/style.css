@@ -59,7 +59,9 @@ h6 {
 .viewheader.top a {
 	color:#fff;
 }
-
+.main-column, .main-column-narrow {
+	width: 80%;
+}
 .main-column {
 	background: #fff !important;
 }
@@ -387,7 +389,7 @@ main-nav ul {
 #sub-nav {
     	font-size: 12px;
     	font-weight: bold;
-    	height: 25px;
+    	height: 30px;
 	line-height: 25px;
 	border: none;
 	min-height: 25px;
@@ -470,6 +472,9 @@ ul.in-page-tabs li a.current-tab:active {
 #right-column {
     padding: 0;
 }
+.right-column {
+	float:left;
+}
 div.sideblock {
     background: url(../images/sidebar-bg.gif) repeat-x top;
 }
@@ -527,6 +532,8 @@ div.sideblock h3 a:hover {
 
 /******************** FOOTER ****************************/
 #footer-wrap {
+	width:90%;
+	min-width:950px;
     background: #939393;
 	border: 0;
     color: #bababa;
