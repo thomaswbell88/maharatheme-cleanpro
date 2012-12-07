@@ -156,6 +156,17 @@ input[type=file] {
 #top-wrapper a {
 	color:#fff;	
 }
+#postlist .changepoststatus input, #bloglist .newentry a.btn, .filebrowser input.unselect, .filelist input.btn-edit, .directory-item input.select, #collectionviews form input.submit, #addviews #addviews_submit, .subscribetd input.btn-subscribe, input#editpost_filebrowser_open_upload_browse, input#editpost_filebrowser_close_upload_browse, #potentialpresetitems div button, #findgroups ul.groupuserstatus form input.submit, #findgroups ul.groupuserstatus li a, #mygroups ul.groupuserstatus form input.submit, #mygroups ul.groupuserstatus li a, #friendslist ul.actionlist form input.submit, #editpost_filebrowser_upload_container input.submit, .groupviewsection .fr input.submit, #viewacl-advanced #results button, .removemember form input.submit, table.templateresults td.right input.submit, #groupboxwrap .fr a.btn {
+    border: 1px solid #fff;
+    background: #fff url(../images/btn-bkgd.gif) repeat-x left top;
+    color: #000 !important;
+    padding: 5px 15px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-weight: bold;
+}
 /** input buttons **/
 .btn,
 input.submit,
@@ -166,7 +177,7 @@ input.button,
 input.select,
 input#files_filebrowser_edit_artefact,
 ul.groupuserstatus li a {
-	border:none;
+	border: 1px solid #fff;
 	background: #fff url(../images/btn-bkgd.gif) repeat-x left top;
 	color: #000 !important;
 	padding: 5px 15px;
@@ -205,15 +216,15 @@ input.button:active,
 input.select:active,
 input#files_filebrowser_edit_artefact:active,
 ul.groupuserstatus li a:active {
-	border-color: #496000 #d5ed8a #d5ed8a #496000;
-	background: #94a44a url(../images/btn-bkgd-hover.gif) repeat-x left 1px;
-	color: #FFF;
-	padding: 5px 15px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-o-border-radius: 3px;
-	font-weight: bold;
+	border: 1px solid #fff;
+    background: #fff url(../images/btn-bkgd.gif) repeat-x left top;
+    color: #000 !important;
+    padding: 5px 15px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-weight: bold;
 }
 
 /* buttons that look like links with icons */
